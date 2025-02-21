@@ -5,6 +5,11 @@ const port =3000;
 app.get('/',(req,res) => {
     res.send("Welcome to Express")
 });
+// app.use(express.json());
+// app.post('/users', (req, res) => {
+//     const {name}=req.body;
+//     res.send("My name is ${name}")
+// });
 // http://localhost:3000/api/mithun/9010
 app.get('/api/:name/:rollno', (req,res) =>{
     try{
